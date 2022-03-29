@@ -122,7 +122,7 @@ function get_matched_files() {
   default_dir="$2"
   files_matched="$3"
   find "$default_dir" -maxdepth 1 -type f -name "$files_matched" -printf "%f\n"
-  [ -d "$custom_dir" ] && find -L "$custom_dir" -type f -name "$files_matched" -printf "%p\n"
+  [ -d "$custom_dir" ] && find "$custom_dir" -maxdepth 10 -type f -name "$files_matched" -printf "%p\n"
 }
 
 # process_extending_files process extending files in $1 and $2 directories
