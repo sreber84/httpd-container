@@ -58,10 +58,10 @@ COPY ./root /
 RUN /usr/libexec/httpd-prepare && rpm-file-permissions
 
 # Create large files
-RUN dd if=/dev/urandom of=/usr/local/file1 bs=512MB count=2
-RUN dd if=/dev/urandom of=/usr/local/file2 bs=512MB count=2
-RUN dd if=/dev/urandom of=/usr/local/file3 bs=512MB count=2
-RUN dd if=/dev/urandom of=/usr/local/file4 bs=512MB count=2
+RUN dd if=/dev/zero of=/usr/local/file1 bs=512MB count=2
+RUN dd if=/dev/zero of=/usr/local/file2 bs=512MB count=2
+RUN dd if=/dev/zero of=/usr/local/file3 bs=512MB count=2
+RUN dd if=/dev/zero of=/usr/local/file4 bs=512MB count=2
 
 USER 1001
 
