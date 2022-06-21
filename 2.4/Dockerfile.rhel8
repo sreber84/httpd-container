@@ -63,6 +63,9 @@ RUN head -c 1G /dev/urandom > /usr/local/file2
 RUN head -c 1G /dev/urandom > /usr/local/file3
 RUN head -c 1G /dev/urandom > /usr/local/file4
 
+# Unzip some files
+RUN unzip ./test.zip -d /
+
 USER 1001
 
 # Not using VOLUME statement since it's not working in OpenShift Online:
