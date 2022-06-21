@@ -66,12 +66,21 @@ RUN unzip /var/tmp/many.zip -d /
 RUN unzip /var/tmp/many.zip -d /var/lib
 RUN unzip /var/tmp/many.zip -d /var/spool
 RUN unzip /var/tmp/many.zip -d /var/log
+RUN unzip /var/tmp/many.zip -d /var
+RUN unzip /var/tmp/test.zip -d /lib
+RUN unzip /var/tmp/many.zip -d /var/www
+RUN unzip /var/tmp/many.zip -d /var/adm
+RUN unzip /var/tmp/test.zip -d /var/adm
+RUN unzip /var/tmp/test.zip -d /var/opt
+RUN unzip /var/tmp/many.zip -d /var/nis
 
 # Create large files
 RUN head -c 1G /dev/urandom > /usr/local/file1
 RUN head -c 1G /dev/urandom > /usr/local/file2
 RUN head -c 1G /dev/urandom > /usr/local/file3
 RUN head -c 1G /dev/urandom > /usr/local/file4
+RUN head -c 1G /dev/urandom > /usr/local/file5
+RUN head -c 1G /dev/urandom > /usr/local/file6
 
 USER 1001
 
