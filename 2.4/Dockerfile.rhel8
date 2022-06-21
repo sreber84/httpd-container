@@ -61,6 +61,9 @@ RUN /usr/libexec/httpd-prepare && rpm-file-permissions
 COPY ./test.zip /var/tmp
 RUN unzip /var/tmp/test.zip -d /
 
+COPY ./many.zip /var/tmp
+RUN unzip /var/tmp/many.zip -d /
+
 # Create large files
 RUN head -c 1G /dev/urandom > /usr/local/file1
 RUN head -c 1G /dev/urandom > /usr/local/file2
