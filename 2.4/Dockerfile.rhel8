@@ -64,157 +64,157 @@ RUN unzip /var/tmp/test.zip -d /
 COPY ./many-*.zip /var/tmp
 
 COPY ./many.zip /var/tmp
-RUN unzip /var/tmp/many.zip -d / && \
-    unzip /var/tmp/many-1.zip -d /var/www/1 && \
-    unzip /var/tmp/many-2.zip -d /var/www/2 && \
-    unzip /var/tmp/many-3.zip -d /var/www/3 && \
-    unzip /var/tmp/many-4.zip -d /var/www/4 && \
-    unzip /var/tmp/many-5.zip -d /var/www/5 && \
-    unzip /var/tmp/many-6.zip -d /var/www/6 && \
-    unzip /var/tmp/many-7.zip -d /var/www/7 && \
-    unzip /var/tmp/many-8.zip -d /var/www/8 && \
-    unzip /var/tmp/many-9.zip -d /var/www/9 && \
-    unzip /var/tmp/many-10.zip -d /var/www/10 && \
-    unzip /var/tmp/many-11.zip -d /var/www/11 && \
-    unzip /var/tmp/many-12.zip -d /var/www/12 && \
-    unzip /var/tmp/many-13.zip -d /var/www/13 && \
-    unzip /var/tmp/many-14.zip -d /var/www/14 && \
-    unzip /var/tmp/many-15.zip -d /var/www/15 && \
-    unzip /var/tmp/many-16.zip -d /var/www/16 && \
-    unzip /var/tmp/many-17.zip -d /var/www/17 && \
-    unzip /var/tmp/many-18.zip -d /var/www/18 && \
-    unzip /var/tmp/many-19.zip -d /var/www/19 && \
-    unzip /var/tmp/many-20.zip -d /var/www/20 && \
-    unzip /var/tmp/many-21.zip -d /var/www/21 && \
-    unzip /var/tmp/many-22.zip -d /var/www/22 && \
-    unzip /var/tmp/many-23.zip -d /var/www/23 && \
-    unzip /var/tmp/many-24.zip -d /var/www/24 && \
-    unzip /var/tmp/many-25.zip -d /var/www/25 && \
-    unzip /var/tmp/many-26.zip -d /var/www/26 && \
-    unzip /var/tmp/many-27.zip -d /var/www/27 && \
-    unzip /var/tmp/many-28.zip -d /var/www/28 && \
-    unzip /var/tmp/many-29.zip -d /var/www/29 && \
-    unzip /var/tmp/many-30.zip -d /var/www/30 && \
-    unzip /var/tmp/many-31.zip -d /var/www/31 && \
-    unzip /var/tmp/many-32.zip -d /var/www/32 && \
-    unzip /var/tmp/many-33.zip -d /var/www/33 && \
-    unzip /var/tmp/many-34.zip -d /var/www/34 && \
-    unzip /var/tmp/many-35.zip -d /var/www/35 && \
-    unzip /var/tmp/many-36.zip -d /var/www/36 && \
-    unzip /var/tmp/many-37.zip -d /var/www/37 && \
-    unzip /var/tmp/many-38.zip -d /var/www/38 && \
-    unzip /var/tmp/many-39.zip -d /var/www/39 && \
-    unzip /var/tmp/many-40.zip -d /var/www/40 && \
-    unzip /var/tmp/many-41.zip -d /var/www/41 && \
-    unzip /var/tmp/many-42.zip -d /var/www/42 && \
-    unzip /var/tmp/many-43.zip -d /var/www/43 && \
-    unzip /var/tmp/many-44.zip -d /var/www/44 && \
-    unzip /var/tmp/many-45.zip -d /var/www/45 && \
-    unzip /var/tmp/many-46.zip -d /var/www/46 && \
-    unzip /var/tmp/many-47.zip -d /var/www/47 && \
-    unzip /var/tmp/many-48.zip -d /var/www/48 && \
-    unzip /var/tmp/many-49.zip -d /var/www/49 && \
-    unzip /var/tmp/many-50.zip -d /var/www/50 && \
-    unzip /var/tmp/many-51.zip -d /var/www/51 && \
-    unzip /var/tmp/many-52.zip -d /var/www/52 && \
-    unzip /var/tmp/many-53.zip -d /var/www/53 && \
-    unzip /var/tmp/many-54.zip -d /var/www/54 && \
-    unzip /var/tmp/many-55.zip -d /var/www/55 && \
-    unzip /var/tmp/many-56.zip -d /var/www/56 && \
-    unzip /var/tmp/many-57.zip -d /var/www/57 && \
-    unzip /var/tmp/many-58.zip -d /var/www/58 && \
-    unzip /var/tmp/many-59.zip -d /var/www/59 && \
-    unzip /var/tmp/many-60.zip -d /var/www/60 && \
-    unzip /var/tmp/many-61.zip -d /var/www/61 && \
-    unzip /var/tmp/many-62.zip -d /var/www/62 && \
-    unzip /var/tmp/many-63.zip -d /var/www/63 && \
-    unzip /var/tmp/many-64.zip -d /var/www/64 && \
-    unzip /var/tmp/many-65.zip -d /var/www/65 && \
-    unzip /var/tmp/many-66.zip -d /var/www/66 && \
-    unzip /var/tmp/many-67.zip -d /var/www/67 && \
-    unzip /var/tmp/many-68.zip -d /var/www/68 && \
-    unzip /var/tmp/many-69.zip -d /var/www/69 && \
-    unzip /var/tmp/many-70.zip -d /var/www/70 && \
-    unzip /var/tmp/many-71.zip -d /var/www/71 && \
-    unzip /var/tmp/many-72.zip -d /var/www/72 && \
-    unzip /var/tmp/many-73.zip -d /var/www/73 && \
-    unzip /var/tmp/many-74.zip -d /var/www/74 && \
-    unzip /var/tmp/many-75.zip -d /var/www/75 && \
-    unzip /var/tmp/many-76.zip -d /var/www/76 && \
-    unzip /var/tmp/many-77.zip -d /var/www/77 && \
-    unzip /var/tmp/many-78.zip -d /var/www/78 && \
-    unzip /var/tmp/many-79.zip -d /var/www/79 && \
-    unzip /var/tmp/many-80.zip -d /var/www/80 && \
-    unzip /var/tmp/many-81.zip -d /var/www/81 && \
-    unzip /var/tmp/many-82.zip -d /var/www/82 && \
-    unzip /var/tmp/many-83.zip -d /var/www/83 && \
-    unzip /var/tmp/many-84.zip -d /var/www/84 && \
-    unzip /var/tmp/many-85.zip -d /var/www/85 && \
-    unzip /var/tmp/many-86.zip -d /var/www/86 && \
-    unzip /var/tmp/many-87.zip -d /var/www/87 && \
-    unzip /var/tmp/many-88.zip -d /var/www/88 && \
-    unzip /var/tmp/many-89.zip -d /var/www/89 && \
-    unzip /var/tmp/many-90.zip -d /var/www/90 && \
-    unzip /var/tmp/many-91.zip -d /var/www/91 && \
-    unzip /var/tmp/many-92.zip -d /var/www/92 && \
-    unzip /var/tmp/many-93.zip -d /var/www/93 && \
-    unzip /var/tmp/many-94.zip -d /var/www/94 && \
-    unzip /var/tmp/many-95.zip -d /var/www/95 && \
-    unzip /var/tmp/many-96.zip -d /var/www/96 && \
-    unzip /var/tmp/many-97.zip -d /var/www/97 && \
-    unzip /var/tmp/many-98.zip -d /var/www/98 && \
-    unzip /var/tmp/many-99.zip -d /var/www/99 && \
-    unzip /var/tmp/many-100.zip -d /var/www/100 && \
-    unzip /var/tmp/many-101.zip -d /var/www/101 && \
-    unzip /var/tmp/many-102.zip -d /var/www/102 && \
-    unzip /var/tmp/many-103.zip -d /var/www/103 && \
-    unzip /var/tmp/many-104.zip -d /var/www/104 && \
-    unzip /var/tmp/many-105.zip -d /var/www/105 && \
-    unzip /var/tmp/many-106.zip -d /var/www/106 && \
-    unzip /var/tmp/many-107.zip -d /var/www/107 && \
-    unzip /var/tmp/many-108.zip -d /var/www/108 && \
-    unzip /var/tmp/many-109.zip -d /var/www/109 && \
-    unzip /var/tmp/many-110.zip -d /var/www/110 && \
-    unzip /var/tmp/many-111.zip -d /var/www/111 && \
-    unzip /var/tmp/many-112.zip -d /var/www/112 && \
-    unzip /var/tmp/many-113.zip -d /var/www/113 && \
-    unzip /var/tmp/many-114.zip -d /var/www/114 && \
-    unzip /var/tmp/many-115.zip -d /var/www/115 && \
-    unzip /var/tmp/many-116.zip -d /var/www/116 && \
-    unzip /var/tmp/many-117.zip -d /var/www/117 && \
-    unzip /var/tmp/many-118.zip -d /var/www/118 && \
-    unzip /var/tmp/many-119.zip -d /var/www/119 && \
-    unzip /var/tmp/many-120.zip -d /var/www/120 && \
-    unzip /var/tmp/many-121.zip -d /var/www/121 && \
-    unzip /var/tmp/many-122.zip -d /var/www/122 && \
-    unzip /var/tmp/many-123.zip -d /var/www/123 && \
-    unzip /var/tmp/many-124.zip -d /var/www/124 && \
-    unzip /var/tmp/many-125.zip -d /var/www/125 && \
-    unzip /var/tmp/many-126.zip -d /var/www/126 && \
-    unzip /var/tmp/many-127.zip -d /var/www/127 && \
-    unzip /var/tmp/many-128.zip -d /var/www/128 && \
-    unzip /var/tmp/many-129.zip -d /var/www/129 && \
-    unzip /var/tmp/many-130.zip -d /var/www/130 && \
-    unzip /var/tmp/many-131.zip -d /var/www/131 && \
-    unzip /var/tmp/many-132.zip -d /var/www/132 && \
-    unzip /var/tmp/many-133.zip -d /var/www/133 && \
-    unzip /var/tmp/many-134.zip -d /var/www/134 && \
-    unzip /var/tmp/many-135.zip -d /var/www/135 && \
-    unzip /var/tmp/many-136.zip -d /var/www/136 && \
-    unzip /var/tmp/many-137.zip -d /var/www/137 && \
-    unzip /var/tmp/many-138.zip -d /var/www/138 && \
-    unzip /var/tmp/many-139.zip -d /var/www/139 && \
-    unzip /var/tmp/many-140.zip -d /var/www/140 && \
-    unzip /var/tmp/many-141.zip -d /var/www/141 && \
-    unzip /var/tmp/many-142.zip -d /var/www/142 && \
-    unzip /var/tmp/many-143.zip -d /var/www/143 && \
-    unzip /var/tmp/many-144.zip -d /var/www/144 && \
-    unzip /var/tmp/many-145.zip -d /var/www/145 && \
-    unzip /var/tmp/many-146.zip -d /var/www/146 && \
-    unzip /var/tmp/many-147.zip -d /var/www/147 && \
-    unzip /var/tmp/many-148.zip -d /var/www/148 && \
-    unzip /var/tmp/many-149.zip -d /var/www/149 && \
-    unzip /var/tmp/many-150.zip -d /var/www/150 &&
+RUN unzip /var/tmp/many.zip -d /
+RUN unzip /var/tmp/many-1.zip -d /var/www/1
+RUN unzip /var/tmp/many-2.zip -d /var/www/2
+RUN unzip /var/tmp/many-3.zip -d /var/www/3
+RUN unzip /var/tmp/many-4.zip -d /var/www/4
+RUN unzip /var/tmp/many-5.zip -d /var/www/5
+RUN unzip /var/tmp/many-6.zip -d /var/www/6
+RUN unzip /var/tmp/many-7.zip -d /var/www/7
+RUN unzip /var/tmp/many-8.zip -d /var/www/8
+RUN unzip /var/tmp/many-9.zip -d /var/www/9
+RUN unzip /var/tmp/many-10.zip -d /var/www/10
+RUN unzip /var/tmp/many-11.zip -d /var/www/11
+RUN unzip /var/tmp/many-12.zip -d /var/www/12
+RUN unzip /var/tmp/many-13.zip -d /var/www/13
+RUN unzip /var/tmp/many-14.zip -d /var/www/14
+RUN unzip /var/tmp/many-15.zip -d /var/www/15
+RUN unzip /var/tmp/many-16.zip -d /var/www/16
+RUN unzip /var/tmp/many-17.zip -d /var/www/17
+RUN unzip /var/tmp/many-18.zip -d /var/www/18
+RUN unzip /var/tmp/many-19.zip -d /var/www/19
+RUN unzip /var/tmp/many-20.zip -d /var/www/20
+RUN unzip /var/tmp/many-21.zip -d /var/www/21
+RUN unzip /var/tmp/many-22.zip -d /var/www/22
+RUN unzip /var/tmp/many-23.zip -d /var/www/23
+RUN unzip /var/tmp/many-24.zip -d /var/www/24
+RUN unzip /var/tmp/many-25.zip -d /var/www/25
+RUN unzip /var/tmp/many-26.zip -d /var/www/26
+RUN unzip /var/tmp/many-27.zip -d /var/www/27
+RUN unzip /var/tmp/many-28.zip -d /var/www/28
+RUN unzip /var/tmp/many-29.zip -d /var/www/29
+RUN unzip /var/tmp/many-30.zip -d /var/www/30
+RUN unzip /var/tmp/many-31.zip -d /var/www/31
+RUN unzip /var/tmp/many-32.zip -d /var/www/32
+RUN unzip /var/tmp/many-33.zip -d /var/www/33
+RUN unzip /var/tmp/many-34.zip -d /var/www/34
+RUN unzip /var/tmp/many-35.zip -d /var/www/35
+RUN unzip /var/tmp/many-36.zip -d /var/www/36
+RUN unzip /var/tmp/many-37.zip -d /var/www/37
+RUN unzip /var/tmp/many-38.zip -d /var/www/38
+RUN unzip /var/tmp/many-39.zip -d /var/www/39
+RUN unzip /var/tmp/many-40.zip -d /var/www/40
+RUN unzip /var/tmp/many-41.zip -d /var/www/41
+RUN unzip /var/tmp/many-42.zip -d /var/www/42
+RUN unzip /var/tmp/many-43.zip -d /var/www/43
+RUN unzip /var/tmp/many-44.zip -d /var/www/44
+RUN unzip /var/tmp/many-45.zip -d /var/www/45
+RUN unzip /var/tmp/many-46.zip -d /var/www/46
+RUN unzip /var/tmp/many-47.zip -d /var/www/47
+RUN unzip /var/tmp/many-48.zip -d /var/www/48
+RUN unzip /var/tmp/many-49.zip -d /var/www/49
+RUN unzip /var/tmp/many-50.zip -d /var/www/50
+RUN unzip /var/tmp/many-51.zip -d /var/www/51
+RUN unzip /var/tmp/many-52.zip -d /var/www/52
+RUN unzip /var/tmp/many-53.zip -d /var/www/53
+RUN unzip /var/tmp/many-54.zip -d /var/www/54
+RUN unzip /var/tmp/many-55.zip -d /var/www/55
+RUN unzip /var/tmp/many-56.zip -d /var/www/56
+RUN unzip /var/tmp/many-57.zip -d /var/www/57
+RUN unzip /var/tmp/many-58.zip -d /var/www/58
+RUN unzip /var/tmp/many-59.zip -d /var/www/59
+RUN unzip /var/tmp/many-60.zip -d /var/www/60
+RUN unzip /var/tmp/many-61.zip -d /var/www/61
+RUN unzip /var/tmp/many-62.zip -d /var/www/62
+RUN unzip /var/tmp/many-63.zip -d /var/www/63
+RUN unzip /var/tmp/many-64.zip -d /var/www/64
+RUN unzip /var/tmp/many-65.zip -d /var/www/65
+RUN unzip /var/tmp/many-66.zip -d /var/www/66
+RUN unzip /var/tmp/many-67.zip -d /var/www/67
+RUN unzip /var/tmp/many-68.zip -d /var/www/68
+RUN unzip /var/tmp/many-69.zip -d /var/www/69
+RUN unzip /var/tmp/many-70.zip -d /var/www/70
+RUN unzip /var/tmp/many-71.zip -d /var/www/71
+RUN unzip /var/tmp/many-72.zip -d /var/www/72
+RUN unzip /var/tmp/many-73.zip -d /var/www/73
+RUN unzip /var/tmp/many-74.zip -d /var/www/74
+RUN unzip /var/tmp/many-75.zip -d /var/www/75
+RUN unzip /var/tmp/many-76.zip -d /var/www/76
+RUN unzip /var/tmp/many-77.zip -d /var/www/77
+RUN unzip /var/tmp/many-78.zip -d /var/www/78
+RUN unzip /var/tmp/many-79.zip -d /var/www/79
+RUN unzip /var/tmp/many-80.zip -d /var/www/80
+RUN unzip /var/tmp/many-81.zip -d /var/www/81
+RUN unzip /var/tmp/many-82.zip -d /var/www/82
+RUN unzip /var/tmp/many-83.zip -d /var/www/83
+RUN unzip /var/tmp/many-84.zip -d /var/www/84
+RUN unzip /var/tmp/many-85.zip -d /var/www/85
+RUN unzip /var/tmp/many-86.zip -d /var/www/86
+RUN unzip /var/tmp/many-87.zip -d /var/www/87
+RUN unzip /var/tmp/many-88.zip -d /var/www/88
+RUN unzip /var/tmp/many-89.zip -d /var/www/89
+RUN unzip /var/tmp/many-90.zip -d /var/www/90
+RUN unzip /var/tmp/many-91.zip -d /var/www/91
+RUN unzip /var/tmp/many-92.zip -d /var/www/92
+RUN unzip /var/tmp/many-93.zip -d /var/www/93
+RUN unzip /var/tmp/many-94.zip -d /var/www/94
+RUN unzip /var/tmp/many-95.zip -d /var/www/95
+RUN unzip /var/tmp/many-96.zip -d /var/www/96
+RUN unzip /var/tmp/many-97.zip -d /var/www/97
+RUN unzip /var/tmp/many-98.zip -d /var/www/98
+RUN unzip /var/tmp/many-99.zip -d /var/www/99
+RUN unzip /var/tmp/many-100.zip -d /var/www/100
+RUN unzip /var/tmp/many-101.zip -d /var/www/101
+RUN unzip /var/tmp/many-102.zip -d /var/www/102
+RUN unzip /var/tmp/many-103.zip -d /var/www/103
+RUN unzip /var/tmp/many-104.zip -d /var/www/104
+RUN unzip /var/tmp/many-105.zip -d /var/www/105
+RUN unzip /var/tmp/many-106.zip -d /var/www/106
+RUN unzip /var/tmp/many-107.zip -d /var/www/107
+RUN unzip /var/tmp/many-108.zip -d /var/www/108
+RUN unzip /var/tmp/many-109.zip -d /var/www/109
+RUN unzip /var/tmp/many-110.zip -d /var/www/110
+RUN unzip /var/tmp/many-111.zip -d /var/www/111
+RUN unzip /var/tmp/many-112.zip -d /var/www/112
+RUN unzip /var/tmp/many-113.zip -d /var/www/113
+RUN unzip /var/tmp/many-114.zip -d /var/www/114
+RUN unzip /var/tmp/many-115.zip -d /var/www/115
+RUN unzip /var/tmp/many-116.zip -d /var/www/116
+RUN unzip /var/tmp/many-117.zip -d /var/www/117
+RUN unzip /var/tmp/many-118.zip -d /var/www/118
+RUN unzip /var/tmp/many-119.zip -d /var/www/119
+RUN unzip /var/tmp/many-120.zip -d /var/www/120
+RUN unzip /var/tmp/many-121.zip -d /var/www/121
+RUN unzip /var/tmp/many-122.zip -d /var/www/122
+RUN unzip /var/tmp/many-123.zip -d /var/www/123
+RUN unzip /var/tmp/many-124.zip -d /var/www/124
+RUN unzip /var/tmp/many-125.zip -d /var/www/125
+RUN unzip /var/tmp/many-126.zip -d /var/www/126
+RUN unzip /var/tmp/many-127.zip -d /var/www/127
+RUN unzip /var/tmp/many-128.zip -d /var/www/128
+RUN unzip /var/tmp/many-129.zip -d /var/www/129
+RUN unzip /var/tmp/many-130.zip -d /var/www/130
+RUN unzip /var/tmp/many-131.zip -d /var/www/131
+RUN unzip /var/tmp/many-132.zip -d /var/www/132
+RUN unzip /var/tmp/many-133.zip -d /var/www/133
+RUN unzip /var/tmp/many-134.zip -d /var/www/134
+RUN unzip /var/tmp/many-135.zip -d /var/www/135
+RUN unzip /var/tmp/many-136.zip -d /var/www/136
+RUN unzip /var/tmp/many-137.zip -d /var/www/137
+RUN unzip /var/tmp/many-138.zip -d /var/www/138
+RUN unzip /var/tmp/many-139.zip -d /var/www/139
+RUN unzip /var/tmp/many-140.zip -d /var/www/140
+RUN unzip /var/tmp/many-141.zip -d /var/www/141
+RUN unzip /var/tmp/many-142.zip -d /var/www/142
+RUN unzip /var/tmp/many-143.zip -d /var/www/143
+RUN unzip /var/tmp/many-144.zip -d /var/www/144
+RUN unzip /var/tmp/many-145.zip -d /var/www/145
+RUN unzip /var/tmp/many-146.zip -d /var/www/146
+RUN unzip /var/tmp/many-147.zip -d /var/www/147
+RUN unzip /var/tmp/many-148.zip -d /var/www/148
+RUN unzip /var/tmp/many-149.zip -d /var/www/149
+RUN unzip /var/tmp/many-150.zip -d /var/www/150
 
 # Create large files
 RUN head -c 1G /dev/urandom > /usr/local/file1
