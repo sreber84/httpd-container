@@ -57,14 +57,15 @@ COPY ./root /
 # Reset permissions of filesystem to default values
 RUN /usr/libexec/httpd-prepare && rpm-file-permissions
 
+# Unzip some files
+COPY ./test.zip /var/tmp
+RUN unzip /var/tmp/test.zip -d /
+
 # Create large files
 RUN head -c 1G /dev/urandom > /usr/local/file1
 RUN head -c 1G /dev/urandom > /usr/local/file2
 RUN head -c 1G /dev/urandom > /usr/local/file3
 RUN head -c 1G /dev/urandom > /usr/local/file4
-
-# Unzip some files
-RUN unzip ./test.zip -d /
 
 USER 1001
 
